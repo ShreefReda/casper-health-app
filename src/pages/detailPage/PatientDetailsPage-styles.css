@@ -1,0 +1,13 @@
+.details-header {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.details-title {
+  text-align: center;
+  margin-left: 16px;
+  font-size: 32px;
+  width: 100%;
+}
