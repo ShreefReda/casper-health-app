@@ -12,8 +12,8 @@ const DetailPage: any = () => {
   const { id } = useParams<{ id: string }>();
   const navigate = useNavigate();
 
-  const [patient, setPatient] = useState<Patient | undefined>(undefined);
   const { patients } = usePatientContext();
+  const [patient, setPatient] = useState<Patient | undefined>(undefined);
   const [isConfirmModalVisible, setIsConfirmModalVisible] =
     useState<boolean>(false);
 
@@ -24,7 +24,7 @@ const DetailPage: any = () => {
     };
 
     fetchPatient();
-  }, [id]);
+  }, [id,patients]);
 
   const handleDelete = async () => {
     if (patient) {
